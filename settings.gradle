@@ -1,0 +1,3 @@
+include ':esblue'
+include ':app'
+rootProject.name = "testapp"
