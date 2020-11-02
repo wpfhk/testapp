@@ -9,10 +9,10 @@ class JNIBase {
         private external fun addFunc(a: Int, b: Int): Int
         private external fun finJNI(): Boolean
 
-        fun libraryTest(): Int {
+        fun libraryTest(a: Int, b: Int): Int {
             initJNI()
             println("Hello library?")
-            var x = addFunc(3, 7)
+            var x = addFunc(a, b)
             finJNI()
             return x
         }
